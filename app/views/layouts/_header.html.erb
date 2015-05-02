@@ -1,0 +1,34 @@
+<div id="header">
+
+  <div id="menu">
+    <nav>
+
+      <%= link_to sonho_path, alt: t(:qual_seu_sonho) do %>
+          <%= image_tag "menu_qual_seu_sonho.png",
+                      alt: t(:qual_seu_sonho),
+                      title: t(:qual_seu_sonho) %>
+
+      <% end %>
+      <%= link_to realize_path, alt: t(:como_realizar_seu_sonho) do %>
+        <%= image_tag "menu_como_realizar_seu_sonho.png",
+                      alt: t(:como_realizar_seu_sonho),
+                      title: t(:como_realizar_seu_sonho) %>
+      <% end %>
+      <%= link_to personagens_path, alt: t(:quais_personagens_dessa_historia) do %>
+        <%= image_tag "menu_quais_personagens_dessa_historia.png",
+                      alt: t(:quais_personagens_dessa_historia),
+                      title: t(:quais_personagens_dessa_historia) %>
+      <% end %>
+      <%= link_to fabrica_path, alt: t(:fabrica_de_sonhos) do %>
+        <%= image_tag "menu_fabrica_de_sonhos.png",
+                      alt: t(:fabrica_de_sonhos),
+                      title: t(:fabrica_de_sonhos) %>
+      <% end %>
+      <%= link_to contato_path, alt: t(:fale_com_equipe_dos_sonhos) do %>
+        <%= image_tag "menu_fale_com_equipe_dos_sonhos.png",
+                      alt: t(:fale_com_equipe_dos_sonhos),
+                      title: t(:fale_com_equipe_dos_sonhos) %>
+      <% end %>
+    </nav>
+  </div>
+</div>

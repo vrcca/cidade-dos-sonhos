@@ -1,14 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-  <title>CidadeDosSonhos</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Cidade dos Sonhos</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+  <div>
+
+
+  <div>
+    <%= image_tag "fundo_topo.png", html: { 'max-width': '100%' } %>
+
+    <div id="conteudo">
+      <%= yield %>
+    </div>
+  </div>
+  </div>
+
 
 </body>
 </html>

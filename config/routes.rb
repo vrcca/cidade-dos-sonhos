@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
+
   root 'home#index'
-  get 'home/index'
+
+  get 'sonho'   => 'home#index'
+  get 'contato'     => 'contato#index'
+  get 'fabrica'     => 'fabrica#index'
+  get 'personagens' => 'personagens#index'
+  get 'realize'     => 'como_realizar#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
